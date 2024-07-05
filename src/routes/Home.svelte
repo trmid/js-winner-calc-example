@@ -1,30 +1,10 @@
-<h1>Getting Started</h1>
+<script>
+  import WinChecker from "../components/WinChecker.svelte"
+</script>
 
-<h2>Install</h2>
+<h1>Manually Check for PoolTogether Wins</h1>
 <p>
-  After running <code>npm init sss &lt;install-directory&gt;</code>, the project dependencies will need to be installed using: <code>npm i</code>.
+  This is a mostly pointless tool for manually checking PoolTogether wins before they are claimed. It's for the truly impatient people who just must know if they won before they win.
 </p>
 
-<h2>Develop</h2>
-<p>
-  To run the development server, run <code>npm run dev</code>. A local server will be started that auto-updates when you make changes.
-</p>
-
-<h2>Build</h2>
-<p>
-  Once you're ready to deploy your site, you can build it with:
-</p>
-<ul>
-  <li>
-    <strong>Linux:</strong> <code>npm run build</code>
-  </li>
-  <li>
-    <strong>Windows:</strong> <code>npm run build-win</code>
-  </li>
-</ul>
-
-<style>
-  ul > li {
-    margin: 1rem 0;
-  }
-</style>
+<WinChecker></WinChecker>

@@ -116,6 +116,7 @@ export default {
 		typescript({
 			sourceMap: !production,
 			inlineSources: !production,
+			exclude: ["node_modules/**/*"],
 		}),
 
 		// In dev mode, call `npm run start` once
