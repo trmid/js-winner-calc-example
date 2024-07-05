@@ -1,7 +1,8 @@
 ![SSS Logo](docs/favicon.svg)
 
-# SSS: Svelte Static SPA
-A template repository for building a single page web app (SPA) with Svelte.
+# Did I Win?
+
+This is a mostly pointless tool for manually checking PoolTogether wins before they are claimed. It's for the truly impatient people who just must know if they won before they win.
 
 ## Configure
 
