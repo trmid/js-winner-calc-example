@@ -37,6 +37,16 @@
   }[] = []
   
   const checkWins = async () => {
+    try {
+      if (user.length !== 42 || !user.startsWith("0x")) {
+        throw new Error("invalid address");
+      }
+      BigInt(user); // will throw if it can't be converted to a bigint
+    } catch(err) {
+      console.error(err);
+      alert("Invalid address...")
+      return;
+    }
     checking = true
     checked = user
     wins = []
@@ -73,7 +83,7 @@
 </script>
 
 <div>
-  <input type="text" name="addressToCheck" bind:value={user} placeholder="User (0x0123...)">
+  <input type="text" name="addressToCheck" bind:value={user} placeholder="User (0x0123...)" on:keydown={e => (!checking && e.key === "Enter") ? checkWins() : null}>
   <button on:click={checkWins} disabled={checking}>Check Wins</button>
   {#if wins.length > 0}
     <h3>Wins Found! 🥳</h3>
