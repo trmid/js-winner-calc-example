@@ -101,7 +101,7 @@
     <h3>No wins today... 🥲</h3>
   {/if}
   {#if checking}
-    <h3>Checking for wins in draw... {Math.floor($now / 500) % 2 == 0 ? "⏳" : "⌛"}</h3>
+    <h3>Checking for wins... {Math.floor($now / 500) % 2 == 0 ? "⏳" : "⌛"}</h3>
   {/if}
 </div>
 
