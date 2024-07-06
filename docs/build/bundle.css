@@ -1,3 +1,4 @@
 header.svelte-1atmdb5>#title.svelte-1atmdb5{font-size:xx-large;font-weight:bold;font-family:'Courier New', Courier, monospace}
 #container.svelte-bgh5jt.svelte-bgh5jt{position:fixed;inset:0;display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--accent-color);z-index:200}#icon.svelte-bgh5jt.svelte-bgh5jt,#spinner.svelte-bgh5jt.svelte-bgh5jt{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%)}#icon.svelte-bgh5jt.svelte-bgh5jt{width:128px}#spinner.svelte-bgh5jt>svg.svelte-bgh5jt{width:256px}
 #wins.svelte-18wnj9r{margin-top:1rem;border:1px solid}td.svelte-18wnj9r,th.svelte-18wnj9r{padding:0.5rem;text-align:left}input.svelte-18wnj9r,button.svelte-18wnj9r{padding:0.5rem}
+footer.svelte-16vrnfp{margin-top:5rem;opacity:0.7}

@@ -6,6 +6,8 @@ This is a mostly pointless tool for manually checking PoolTogether wins before t
 
 ## Configure
 
+This app was made using [SSS](https://github.com/trmid/svelte-static-spa). Use this template for your own site by running: `npm init sss <directory>`.
+
 Change app options in `sss.config.json`.
 
 ## Development

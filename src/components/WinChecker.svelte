@@ -1,5 +1,6 @@
 <script lang="ts">
   import { computeWinners } from "@generationsoftware/tevm-winner-calc"
+  import { now } from "../stores"
   
   type Address = `0x${string}`
 
@@ -75,7 +76,7 @@
   <input type="text" name="addressToCheck" bind:value={user} placeholder="User (0x0123...)">
   <button on:click={checkWins} disabled={checking}>Check Wins</button>
   {#if wins.length > 0}
-    <h3>Wins Found!</h3>
+    <h3>Wins Found! 🥳</h3>
     <table id="wins">
       <tr>
         <th>Chain</th>
@@ -97,10 +98,10 @@
       {/each}
     </table>
   {:else if !checking && checked === user}
-    <h3>No wins today...</h3>
+    <h3>No wins today... 🥲</h3>
   {/if}
   {#if checking}
-    <h3>Checking for wins...</h3>
+    <h3>Checking for wins in draw... {Math.floor($now / 500) % 2 == 0 ? "⏳" : "⌛"}</h3>
   {/if}
 </div>
 
