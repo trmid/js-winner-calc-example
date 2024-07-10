@@ -1,7 +1,7 @@
 {
   "name": "did-i-win",
   "description": "A tool to check if you won a PoolTogether prize before it's claimed.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "build": "NODE_ENV=production && rollup -c",
@@ -31,6 +31,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@generationsoftware/tevm-winner-calc": "^1.0.3"
+    "@generationsoftware/js-winner-calc": "^1.1.5"
   }
 }

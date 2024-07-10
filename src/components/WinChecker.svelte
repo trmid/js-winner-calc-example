@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { computeWinners } from "@generationsoftware/tevm-winner-calc"
+  import { computeWinners } from "@generationsoftware/js-winner-calc"
   import { now } from "../stores"
   
   type Address = `0x${string}`
